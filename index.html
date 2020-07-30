@@ -7,43 +7,58 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body class="bck-img">
-
-  <div class='main-section'>
-
+<body>
+  <section id="main-section">
     <div class="box-icons">
-      <img src="images/logo.svg" alt="Kiwi standing on oval">
-      <img src="images/icon-document.svg" alt="Kiwi standing on oval">
-      <img src="images/icon-folder.svg" alt="Kiwi standing on oval">
-      <img src="images/icon-upload.svg" alt="Kiwi standing on oval">
+      <img class="logo-image" src="images/logo.svg" alt="Kiwi standing on oval">
+      <div class="box-border">
+        <img class="icon-image" src="images/icon-document.svg" alt="Kiwi standing on oval">
+      </div>
+      <div class="box-border">
+        <img class="icon-image" src="images/icon-folder.svg" alt="Kiwi standing on oval">
+      </div>
+      <div class="box-border">
+        <img class="icon-image" src="images/icon-upload.svg" alt="Kiwi standing on oval">
+      </div>
 
     </div>
 
+
+  <div id="container">
+    <div class="data-box">
+      
+      <p>You’ve used <strong>815</strong>GB of your storage </p> 
+      
+      <div class="data-bar">
+        <span style="width:80%"></span>
+      </div>
+      <div class="below-bar-right">
+        0 GB
+      </div>
+      <div class="below-bar-left">
+        1000 GB
+      </div>
+      <div class="speech-box">
+        <span class="data-number">185</span> 
+        <span class= "data-unit">GB LEFT</span> 
+      </div>
+    </div>
 
     
-    <div class="data-box">
 
-      You’ve used 815 GB of your storage
-      185 GB Left
-      
-        <!-- the data bar -->
-      
-      0 GB
-      1000 GB
-      
-      
-    </div>
   </div>
   
+  
+
+
+  
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">schem.codes</a>.
